@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import data from './data.json';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App 
+      data={data}
+      title='OpenLibrary API'
+      headings={['When', 'Who', 'Description']}
+    />
   </React.StrictMode>,
   document.getElementById('root')
 );
