@@ -10,6 +10,7 @@ ReactDOM.render(
       data={data}
       title='OpenLibrary API'
       headings={['When', 'Who', 'Description']}
+      users={10}
     />
   </React.StrictMode>,
   document.getElementById('root')
